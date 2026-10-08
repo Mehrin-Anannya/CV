@@ -1,171 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mehrin Anannya</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehrin Anannya - CV</title>
+<style>
+  :root {
+    --ink: #222;
+    --muted: #555;
+    --accent: #17365d;
+    --line: #d9d9d9;
+    --paper: #fff;
+    --bg: #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+  }
+  .page {
+    max-width: 900px;
+    margin: 28px auto;
+    background: var(--paper);
+    padding: 42px 54px;
+    box-shadow: 0 2px 14px rgba(0,0,0,.10);
+  }
+  header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    margin: 0 0 7px;
+    font-size: 30px;
+    letter-spacing: .8px;
+  }
+  .affiliation { font-size: 14px; margin-bottom: 5px; }
+  .contact { font-size: 13px; color: var(--muted); }
+  h2 {
+    color: var(--accent);
+    font-size: 15px;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 5px;
+    margin: 22px 0 12px;
+  }
+  .entry {
+    margin-bottom: 14px;
+  }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 700;
+  }
+  .institution { font-weight: 700; }
+  .location, .date { color: var(--muted); font-size: 13px; }
+  .sub { margin-top: 2px; }
+  .label { font-weight: 700; }
+  ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+  }
+  li { margin: 3px 0; }
+  .publication {
+    margin: 8px 0;
+    padding-left: 14px;
+    text-indent: -14px;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 6px 16px;
+  }
+  .skill-label { font-weight: 700; }
+  @media (max-width: 700px) {
+    .page { margin: 0; padding: 28px 24px; box-shadow: none; }
+    .entry-head { display: block; }
+    .skills { grid-template-columns: 1fr; gap: 2px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; max-width: none; padding: 25mm 18mm; box-shadow: none; }
+    h2 { break-after: avoid; }
+    .entry, .publication { break-inside: avoid; }
+  }
+</style>
 </head>
-
 <body>
-
+<main class="page">
 <header>
   <h1>MEHRIN ANANNYA</h1>
-  <p>
-    Institute of Information Technology, Jahangirnagar University (JU), Dhaka, Bangladesh<br>
-    Phone: +880 1780 096 096<br>
-    mehrin.anannya@juniv.edu<br>
-    github: <a href="https://github.com/Mehrin-Anannya">Mehrin-Anannya</a>
-  </p>
+  <div class="affiliation">Institute of Information Technology, Jahangirnagar University (JU), Dhaka, Bangladesh</div>
+  <div class="contact">Phone: +880 1780 096 096 &nbsp; · &nbsp; mehrin.anannya@juniv.edu &nbsp; · &nbsp; GitHub: Mehrin-Anannya</div>
 </header>
 
 <section>
-  <h2>EDUCATION</h2>
-
-  <p>
-    <strong>Jahangirnagar University</strong>, Dhaka, Bangladesh<br>
-    M.Sc. in Information Technology, Apr 2016<br>
-    CGPA: 3.92/4.0 (Position: 2nd)<br>
-    Thesis: Performance Measurement Model of Mobile User Connectivity in
-    Femtocell/Macrocell Networks using Fractional Frequency Re-use Scheme
-  </p>
-
-  <p>
-    <strong>Jahangirnagar University</strong>, Dhaka, Bangladesh<br>
-    B.Sc. in Information Technology, Dec 2014<br>
-    CGPA: 3.75/4.0 (Position: 6th)<br>
-    Project: Automated CV Processing along with Psychometric Analysis in Job Recruiting Process
-  </p>
+<h2>Education</h2>
+<div class="entry">
+  <div class="entry-head"><span>Jahangirnagar University</span><span class="location">Dhaka, Bangladesh</span></div>
+  <div class="entry-head"><span>M.Sc. in Information Technology</span><span class="date">Apr 2016</span></div>
+  <div>CGPA: 3.92/4.0 (Position: 2nd)</div>
+  <div><span class="label">Thesis:</span> Performance Measurement Model of Mobile User Connectivity in Femtocell/Macrocell Networks using Fractional Frequency Re-use Scheme</div>
+</div>
+<div class="entry">
+  <div class="entry-head"><span>Jahangirnagar University</span><span class="location">Dhaka, Bangladesh</span></div>
+  <div class="entry-head"><span>B.Sc. in Information Technology</span><span class="date">Dec 2014</span></div>
+  <div>CGPA: 3.75/4.0 (Position: 6th)</div>
+  <div><span class="label">Project:</span> Automated CV Processing along with Psychometric Analysis in Job Recruiting Process</div>
+</div>
 </section>
 
 <section>
-  <h2>RESEARCH INTERESTS</h2>
-  <p>
-    Artificial Intelligence,  Natural Language Processing,  Machine Learning, Human Centered AI, Software Engineering, Software & Cyber Security
-  </p>
+<h2>Research Interests</h2>
+<p>Natural language processing, artificial intelligence (AI), AI for software engineering, human-AI interaction, machine learning, software &amp; cyber security and computer vision</p>
 </section>
 
 <section>
-  <h2>TEACHING EXPERIENCES</h2>
-
-  <p>
-    <strong>Assistant Professor</strong> (Nov 2023 - Present)<br>
-    Institute of Information Technology, Jahangirnagar University, Dhaka, Bangladesh
-  </p>
+<h2>Teaching Experiences</h2>
+<div class="entry">
+  <div class="entry-head"><span>Assistant Professor</span><span class="date">Nov 2023 - Present</span></div>
+  <div class="institution">Institute of Information Technology, Jahangirnagar University <span class="location">Dhaka, Bangladesh</span></div>
+  <div><span class="label">Taught courses:</span> Object-Oriented Software Engineering, Database Management Systems, Algorithm Analysis</div>
+  <div><span class="label">Supervised Thesis:</span></div>
   <ul>
-    <li>Object-Oriented Software Engineering</li>
-    <li>Database Management Systems</li>
-    <li>Algorithm Analysis</li>
-    <li>Unified Bangla: A Cross-Dialectal Translation System for Regional Dialects of Bangladesh</li>
+    <li>Unified Bangla: A Cross-Dialectal Translation System for Regional Dialects of Bangladesh.</li>
     <li>SDLC Model Selection through NLP-Based Requirement Analysis</li>
   </ul>
+</div>
 
-  <p>
-    <strong>Lecturer</strong> (Feb 2021 - Nov 2023)<br>
-    Institute of Information Technology, Jahangirnagar University, Dhaka, Bangladesh
-  </p>
-  <ul>
-    <li>Human Computer Interaction</li>
-    <li>Object Oriented Programming</li>
-    <li>Software Engineering</li>
-    <li>Internet and Web Technology</li>
-    <li>Multimedia Systems and its Applications</li>
-    <li>A Deep Learning Approach for Sentiment Analysis in Bangla Product Reviews</li>
-  </ul>
+<div class="entry">
+  <div class="entry-head"><span>Lecturer</span><span class="date">Feb 2021 - Nov 2023</span></div>
+  <div class="institution">Institute of Information Technology, Jahangirnagar University <span class="location">Dhaka, Bangladesh</span></div>
+  <div><span class="label">Taught courses:</span> Human Computer Interaction, Object Oriented Programming, Software Engineering, Internet and Web Technology, Multimedia Systems and its Applications</div>
+  <div><span class="label">Supervised Project:</span> A Deep Learning Approach for Sentiment Analysis in Bangla Product Reviews</div>
+</div>
 
-  <p>
-    <strong>Lecturer</strong> (Jul 2016 - Jul 2019)<br>
-    Information and Communication Technology, Bangladesh University of Professionals, Dhaka, Bangladesh
-  </p>
-  <ul>
-    <li>Software Engineering</li>
-    <li>Database Management Systems</li>
-    <li>Data Structure & Algorithm</li>
-    <li>C Programming</li>
-  </ul>
+<div class="entry">
+  <div class="entry-head"><span>Lecturer</span><span class="date">Jul 2016 - Jul 2019</span></div>
+  <div class="institution">Information and Communication Technology, Bangladesh University of Professionals (BUP) <span class="location">Dhaka, Bangladesh</span></div>
+  <div><span class="label">Taught courses:</span> Software Engineering, Database Management Systems, Data Structure &amp; Algorithm, C Programming</div>
+</div>
 </section>
 
 <section>
-  <h2>RELATED PROFESSIONAL EXPERIENCE</h2>
-  <p>
-    <strong>Junior Software Engineer (Java Developer)</strong> (May 2015 - Jul 2016)<br>
-    Genweb2 Ltd., Dhaka, Bangladesh
-  </p>
-  <ul>
-    <li>Foreign Aid Management System (FAMS)</li>
-    <li>Booking Management Software (Katair)</li>
-  </ul>
+<h2>Related Professional Experience</h2>
+<div class="entry">
+  <div class="entry-head"><span>Junior Software Engineer (Java Developer)</span><span class="date">May 2015 - Jul 2016</span></div>
+  <div class="institution">Genweb2 Ltd. <span class="location">Dhaka, Bangladesh</span></div>
+  <div><span class="label">Projects:</span> Foreign Aid Management System (FAMS), Booking Management Software (Katair)</div>
+</div>
 </section>
 
 <section>
-  <h2>PUBLICATIONS</h2>
+<h2>Publications</h2>
+<h3>Published</h3>
 
-  <h3>Published</h3>
-  <ul>
-    <li> <a href="https://www.authorea.com/doi/full/10.22541/au.174417331.12382902">An Intelligent Assistive System for Autistic Learners</a>, Wiley</li>
-    <li> <a href="https://www.mdpi.com/1999-5903/17/6/234">Federated XAI IDS: An explainable and safeguarding privacy approach to detect intrusion combining federated learning and SHAP</a>, MDPI</li>
-    <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309364">Image captioning in Bengali language using visual attention</a>, PLOS One</li>
-    <li><a href="https://ieeexplore.ieee.org/abstract/document/11024787">Impact, Causation and Prediction of Socio-Academic and Economic Factors in Exam-centric Student Evaluation Measures using Machine Learning and Causal Analysis</a>, IEEE</li>
-    <li><a href="https://doi.org/10.1007/978-981-97-8540-7_16">Securing Networks: A Deep Learning Approach with Explainable AI (XAI) and Federated Learning for Intrusion Detection</a>, Springer</li>
-    <li><a href="https://dx.doi.org/10.14569/IJACSA.2023.01408110">Eligible Personal Loan Applicant Selection using Federated Machine Learning Algorithm</a>, SAI</li>
-    <li><a href="https://doi.org/10.1016/j.measen.2023.100822">Machine learning and internet of things in industry 4.0: A review</a>, Elsevier</li>
-    <li><a href="https://doi.org/10.1007/978-981-19-0332-8_44">Quality Analysis of PATHAO Ride-Sharing Service in Bangladesh</a>, Springer</li>
-    <li><a href="https://doi.org/10.14569/IJACSA.2018.090546">Performance Measurement Model of Mobile User Connectivity in Femtocell/Macrocell Networks using Fractional Frequency Re-use Scheme</a>, SAI</li>
-    <li><a href="https://doi.org/10.1109/ICEEICT.2015.7307521">Automated CV Processing along with Psychometric Analysis in Job Recruiting Process</a>, IEEE</li>
-  </ul>
+<div class="publication">Tasfia Israt, Mehrin Anannya, Sadia Mahfuz, Riad Mashrub Shourov, Md. Biplob Hosen, Rashed Mazumder, <a href="https://ieeexplore.ieee.org/abstract/document/11545634"> “Unified Bangla: A Transformer-Based Framework for Bangla Dialect Identification and Cross-Dialectal Translation”</a>, 2026 IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking. [Conference]</div>
 
-  <h3>Accepted</h3>
-  <ul>
-    <li>Explainable AI Based Multi-Class Pneumonia Classification and Anomaly Detection from Chest X-ray, IEEE</li>
-    <li>Hybrid Approach towards Multi-Label Semi-Supervised Emotion Classification, IEEE</li>
-  </ul>
+<div class="publication">Sadia Afrin, Afrin Ahmed, Mehrin Anannya, Samrat Dey, Md Moshiur Rahman, Rashed Mazumder, <a href="https://www.authorea.com/doi/full/10.22541/au.174417331.12382902">“An Intelligent Assistive System for Autistic Learners” </a>, Engineering Reports. [Journal]</div>
 
-  <h3>Under Review</h3>
-  <ul>
-    <li>Unifying Regional Dialects of Bangladesh: A PRISMA 2020-based Systematic Literature Review on NLP and ML Research, ACM</li>
-    <li>SDLC Model Selection through NLP-Based Requirement Analysis, Springer</li>
-    <li>A Systematic Literature Review To Predict Software Defects From Code Smells Using Machine And Deep Learning Techniques, IEEE</li>
-  </ul>
+<div class="publication">Sadia Mahfuz, Tasfia Israt, Mehrin Anannya, Md. Biplob Hosen, Rashed Mazumder, <a href="https://ieeexplore.ieee.org/document/11381871"> AI Based Multi-Class Pneumonia Classification and Anomaly Detection from Chest X-ray” </a>, 2nd IEEE Conference on Computing Applications and Systems (COMPAS 2025) [Conference]</div>
+
+<div class="publication">Jannatul Ferdous Muna, Abier Farzana Hoque, Rahul Das, Mehrin Anannya, Rashed Mazumder, Md. Biplob Hosen, <a href="https://ieeexplore.ieee.org/abstract/document/11381786"> Approach towards Multi-Label Semi-Supervised Emotion Classification”</a>, 2nd IEEE Conference on Computing Applications and Systems (COMPAS 2025) [Conference]</div>
+
+<div class="publication">Kazi Fatema, Samrat Kumar Dey, Mehrin Anannya, Risala Tasin Khan, Mohammad Mamunur Rashid, Chunhua Su, Rashed Mazumder, M. Shamim Kaiser, <a href="https://www.mdpi.com/1999-5903/17/6/234">“Federated XAI IDS: An explainable and safeguarding privacy approach to detect intrusion combining federated learning and SHAP”</a>, Future Internet, MDPI, May 2025. [Journal]</div>
+
+<div class="publication">Adiba Masud, Md. Biplob Hosen, Md. Habibullah, Mehrin Anannya, M. Shamim Kaiser, <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309364">“Image captioning in Bengali language using visual attention”</a>, PLOS One, February 2025. [Journal]</div>
+
+<div class="publication">Md. Biplob Hosen; Sabbir Ahmed; Bushra Akter; Mehrin Anannya, <a href="https://ieeexplore.ieee.org/abstract/document/11024787">“Impact, Causation and Prediction of Socio-Academic and Economic Factors in Exam-centric Student Evaluation Measures using Machine Learning and Causal Analysis”</a>, 13th International Conference on Electrical and Computer Engineering (ICECE), 2024. [Conference]</div>
+
+<div class="publication">Kazi Fatema, Mehrin Anannya, Samrat Kumar Dey, Chunhua Su, Rashed Mazumder, <a href="https://doi.org/10.1007/978-981-97-8540-7_16">“Securing Networks: A Deep Learning Approach with Explainable AI (XAI) and Federated Learning for Intrusion Detection”</a>, International Conference on Data Security and Privacy Protection, 260-275, October 2024. [Conference]</div>
+
+<div class="publication">Mehrin Anannya; Most. Shahera Khatun, Md. Biplob Hosen, Sabbir Ahmed, Md. Farhad Hossain, M. Shamim Kaiser, <a href="https://dx.doi.org/10.14569/IJACSA.2023.01408110">“Eligible Personal Loan Applicant Selection using Federated Machine Learning Algorithm”</a>, IJACSA, The Science and Information (SAI) Organization. [Journal]</div>
+
+<div class="publication">Md. Sazzadur Rahman, Tapotosh Ghosh, Nahid Ferdous Aurna, M. Shamim Kaiser, Mehrin Anannya, A.S.M. Sanwar Hosen, <a href="https://doi.org/10.1016/j.measen.2023.100822">“Machine learning and internet of things in industry 4.0: A review”</a>, Measurement: Sensors, August 2023. [Journal]</div>
+
+<div class="publication">Hosen, M.B., Farin, N.J., Anannya, M., Islam, K., Uddin, <a href="https://doi.org/10.1007/978-981-19-0332-8_44">“Quality Analysis of PATHAO Ride-Sharing Service in Bangladesh”</a>, Proceedings of International Joint Conference on Advances in Computational Intelligence (pp.597-611), May 2022. [Book Chapter]</div>
+
+<div class="publication">Mehrin Anannya and Riad Mashrub Shourov, <a href="https://doi.org/10.14569/IJACSA.2018.090546">“Performance Measurement Model of Mobile User Connectivity in Femtocell/Macrocell Networks using Fractional Frequency Re-use Scheme”</a>, International Journal of Advanced Computer Science and Applications (IJACSA), 9(5), 2018. [Journal]</div>
+
+<div class="publication">Firoz Ahmed; Mehrin Anannya; Tanvir Rahman; Risala Tasin Khan, <a href="https://doi.org/10.1109/ICEEICT.2015.7307521">“Automated CV Processing along with Psychometric Analysis in Job Recruiting Process”</a>, International Conference on Electrical Engineering and Information Communication Technology (ICEEICT), October 2015. [Conference]</div>
 </section>
 
 <section>
-  <h2>SCHOLARSHIPS</h2>
-  <ul>
-    <li>Earned merit-based scholarships each semester from Jahangirnagar University</li>
-    <li>Received government scholarship to have training in Java Web-App in India (Position-1st)</li>
-  </ul>
+<h2>Technical Skills</h2>
+<div class="skills">
+  <div class="skill-label">Programming Language</div><div>Java, C, C++, Python, R</div>
+  <div class="skill-label">Backend Framework</div><div>J2EE, Spring Web MVC, Thymeleaf, Struts, JSF, NodeJS</div>
+  <div class="skill-label">Database</div><div>Oracle, MySQL, MongoDB, H2, SQLite, ORM - JPA, Hibernate, MyBatis, iBatis</div>
+  <div class="skill-label">Python (ML &amp; DL Libraries)</div><div>NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, PyTorch, Keras</div>
+  <div class="skill-label">NLP</div><div>Hugging Face, Tokenizer, lemmatization, sentiment analysis, BERT</div>
+</div>
 </section>
 
 <section>
-  <h2>TRAINING</h2>
-  <ul>
-    <li>Java (Infosys Ltd.) Internship on Java Web based Application (Mysore, Bangalore, India)</li>
-    <li>Android (Datasoft Systems Ltd.) Internship on Android (Industrial Attachment) (Bangladesh)</li>
-  </ul>
+<h2>Scholarships</h2>
+<ul>
+  <li><strong>Jahangirnagar University:</strong> Earned merit-based scholarships each semester from Jahangirnagar University</li>
+  <li><strong>Bangladesh Government:</strong> Received government scholarship to have training in Java Web-App in India (Position-1st)</li>
+</ul>
 </section>
 
 <section>
-  <h2>TECHNICAL SKILLS</h2>
-  <ul>
-    <li>Programming Language: Java, C, C++, Python, R</li>
-    <li>Backend Framework: J2EE, Spring Web MVC, Thymeleaf, Struts, JSF, NodeJS</li>
-    <li>Database: Oracle, MySQL, MongoDB, H2, SQLite</li>
-    <li>ORM: JPA, Hibernate, MyBatis, iBatis</li>
-    <li>Python (ML & DL Libraries): NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, PyTorch, Keras</li>
-    <li>NLP: Hugging Face, Tokenizer, lemmatization, sentiment analysis, BERT</li>
-  </ul>
+<h2>Training</h2>
+<ul>
+  <li><strong>Java (Infosys Ltd.):</strong> Internship on Java Web based Application (Mysore, Bangalore, India)</li>
+  <li><strong>Android (Datasoft Systems Ltd.):</strong> Internship on Android (Industrial Attachment) (Bangladesh)</li>
+</ul>
 </section>
 
 <section>
-  <h2>EXTRA CURRICULAR ACTIVITIES</h2>
-  <ul>
-    <li>Ex-Moderator, BUP InfoTech Club</li>
-    <li>Coach, programming teams in Bangladesh University of Professionals</li>
-    <li>Member, Bangladesh Computer Society</li>
-    <li>Anchor, 2nd International Conference on Electrical Engineering and Information & Communication Technology</li>
-    <li>Ex-Executive of Viqarunnisa Noon College Science Club</li>
-    <li>Secured 2nd position in disk throwing in college yearly game competition</li>
-  </ul>
+<h2>Extra Curricular Activities</h2>
+<ul>
+  <li>Ex-Moderator, BUP InfoTech Club (Organized National Programming Contest, BUP) (as a Teacher)</li>
+  <li>Coach, programming teams in Bangladesh University of Professionals (as a Teacher)</li>
+  <li>Member, Bangladesh Computer Society</li>
+</ul>
 </section>
 
+</main>
 </body>
 </html>
