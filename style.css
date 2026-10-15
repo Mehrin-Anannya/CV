@@ -52,10 +52,14 @@
     gap: 20px;
     font-weight: 700;
   }
-  .institution { font-weight: 700; }
+  .institution { display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 500;
+   }
   .location, .date { color: var(--muted); font-size: 13px; }
   .sub { margin-top: 2px; }
-  .label { font-weight: 700; }
+  .label { font-weight: 400; }
   ul {
     margin: 5px 0 0 20px;
     padding: 0;
